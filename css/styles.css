@@ -2,5 +2,133 @@ body {
   background-color: aqua;
   color: rgb(34, 12, 12);
 }
-.logo {color: #ffffff;}
-color: #2196F3 
+.logo {
+  color: #ffffff;
+}
+.nav a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.nav a:hover {
+  color: #2196f3;
+}
+
+.contact a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.contact a:hover {
+  color: #2196f3;
+}
+
+.baner > h1 {
+  color: #ffffff;
+  text-align: center;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+}
+
+/* our advantages */
+.advantages img {
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.advantages h3 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.advantages p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #757575;
+}
+
+/* our_products */
+.our_products h2 {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.our_products h3 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+  background-size: 370px 70px;
+  padding: 2px;
+}
+.our_team {
+  background: #f5f4fa;
+}
+.our_team h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.our_team h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.our_team p {
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+  font-size: 16px;
+  line-height: 19px;
+}
+.Soc_Media {
+  background: #ffffff;
+}
+.Soc_Media a:hover,
+a:focus {
+  background-color: #2196f3;
+}
+.customers h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.customers a {
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+/* застосувати hover i focus до всіх посилань */
+/* 
+.customers a:hover, :focus, :active, :visited: {
+  color: red;
+  background-color: orange;
+} */
+.customers a:hover,
+.customers a:focus {
+  background-color: #2196f3;
+}
+
+.footer {
+  background: #2f303a;
+}

@@ -4,16 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title Web Studio</title>
+    <title>Web Studio</title>
   </head>
   <body>
     <header>
       <nav>
-        <a href="./index.html">
-            Web <span class="logo">Studio </span> 
-         </a>
-        
-        <ul class="navigation">
+        <a href="./index.html"> Web <span class="logo">Studio </span> </a>
+
+        <ul class="nav">
+          <!-- <nav-navigation> -->
           <li><a href="">Студия</a></li>
           <li><a href="">Портфолио</a></li>
           <li><a href="">Контакты</a></li>
@@ -45,7 +44,7 @@
         </section>
       </div>
 
-      <section class="our advantages">
+      <section class="advantages">
         <h2>наши преимущества</h2>
         <!--приховати через CSS-->
         <ul>
@@ -121,6 +120,7 @@
           </li>
         </ul>
       </section>
+
       <!--section our team-->
       <section class="our_team">
         <h2>Наша команда</h2>
@@ -134,8 +134,9 @@
             />
             <h3>Николай Кучеренко</h3>
             <p>Product Designer</p>
+
             <!--блок соц мережі start -->
-            <ul>
+            <ul class="Soc_Media">
               <li>
                 <a href=""
                   ><img src="./images/Instagram.svg" alt="Instagram"
@@ -166,8 +167,9 @@
             />
             <h3>Ольга Иванова</h3>
             <p>Frontend Developer</p>
+
             <!--блок соц мережі start -->
-            <ul>
+            <ul class="Soc_Media">
               <li>
                 <a href=""
                   ><img src="./images/Instagram.svg" alt="Instagram"
@@ -198,8 +200,9 @@
             />
             <h3>Андрей Шевченко</h3>
             <p>Marketing</p>
+
             <!--блок соц мережі start -->
-            <ul>
+            <ul class="Soc_Media">
               <li>
                 <a href=""
                   ><img src="./images/Instagram.svg" alt="Instagram"
@@ -225,8 +228,9 @@
             <img src="./images/Ivan.jpg" alt="fot_Ivan" />
             <h3>Иван Николаев</h3>
             <p>UI Designer</p>
+
             <!--блок соц мережі start -->
-            <ul>
+            <ul class="Soc_Media">
               <li>
                 <a href="Instagram:"
                   ><img src="./images/Instagram.svg" alt="Instagram"
@@ -250,8 +254,9 @@
           </li>
         </ul>
       </section>
+
       <!--SECTION constant customers-->
-      <section>
+      <section class="customers">
         <h2>Постоянные клиенты</h2>
         <ul>
           <li>
@@ -259,57 +264,76 @@
           </li>
           <li>
             <a href=""
-              ><img src="./images/Company_Tag_Line_Here.svg" alt="logotype Company_Tag_Line_Here"
+              ><img
+                src="./images/Company_Tag_Line_Here.svg"
+                alt="logotype Company_Tag_Line_Here"
             /></a>
           </li>
           <li>
-            <a href=""><img src="./images/Company.svg" alt="logotype Company" /></a>
+            <a href=""
+              ><img src="./images/Company.svg" alt="logotype Company"
+            /></a>
           </li>
           <li>
-            <a href=""><img src="./images/Foster_Peters.svg" alt="logotype Foster_Peters" /></a>
+            <a href=""
+              ><img
+                src="./images/Foster_Peters.svg"
+                alt="logotype Foster_Peters"
+            /></a>
           </li>
           <li>
             <a href=""><img src="./images/Brand.svg" alt="logotype Brand" /></a>
           </li>
           <li>
-            <a href=""><img src="./images/Company_Tag_Line.svg" alt="logotype Company_Tag_Line" /></a>
+            <a href=""
+              ><img
+                src="./images/Company_Tag_Line.svg"
+                alt="logotype Company_Tag_Line"
+            /></a>
           </li>
         </ul>
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
       <p>
         футер
-      </p> 
+      </p>
       <!--блок з адресою-->
       <div>
-       <a href="./index.html"> <img src="./images/WebStudio.svg" alt="logo WebStudio"></a>
-       <address>г.Киев, пр-т Л.Украинки, 26
-         <a href="mailto:info@example.com">info@example.com</a> <br>
-         <a href="tell:+380991111111">+38 099 111 11 11</a>
-       </address>
+        <a href="./index.html">
+          <img src="./images/WebStudio.svg" alt="logo WebStudio"
+        /></a>
+        <address>
+          г.Киев, пр-т Л.Украинки, 26
+          <a href="mailto:info@example.com">info@example.com</a> <br />
+          <a href="tell:+380991111111">+38 099 111 11 11</a>
+        </address>
       </div>
       <!--блок з соцмережами-->
       <div>
         <p><b> присоединяйтесь</b></p>
         <ul>
-          <li> <a href="" aria-label="link to Instagram">значок Instagram</a></li>
-          <li> <a href="" aria-label="link to Twitter">значок</a></li>
-          <li> <a href="" aria-label="link to faceboock">значок</a></li>
-          <li> <a href="" aria-label="link to in">значок</a></li>
+          <li>
+            <a href="" aria-label="link to Instagram">значок Instagram</a>
+          </li>
+          <li><a href="" aria-label="link to Twitter">значок</a></li>
+          <li><a href="" aria-label="link to faceboock">значок</a></li>
+          <li><a href="" aria-label="link to in">значок</a></li>
         </ul>
       </div>
       <!--блок на підписку-->
       <div>
-        <p> <b>Подпишитесь на рассылку</b> </p>
-        <input type="text">
-        <a href="">Подписаться <img src="./images/telegram.svg" alt="images_telegram" width="24" ></a>
-        <input type="button" value="Подписаться"> 
-        <img src="./images/telegram.svg" alt="images_telegram" width="24"> 
+        <p><b>Подпишитесь на рассылку</b></p>
+        <input type="text" />
+        <a href=""
+          >Подписаться
+          <img src="./images/telegram.svg" alt="images_telegram" width="24"
+        /></a>
+        <input type="button" value="Подписаться" />
+        <img src="./images/telegram.svg" alt="images_telegram" width="24" />
       </div>
-       <input type="image" src="./images/telegram.svg" alt="icon telegram">
+      <input type="image" src="./images/telegram.svg" alt="icon telegram" />
     </footer>
-    
-    </body>
+  </body>
 </html>
