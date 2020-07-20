@@ -1,19 +1,27 @@
+:root {
+  --primary-title-color: #212121;
+  --primary-text-color: #757575;
+  --primary-fon-button: #f5f4fa;
+  --accent-fon: #2196f3;
+  --accent-text-color: #ffffff;
+}
 body {
   background-color: aqua;
-  color: rgb(34, 12, 12);
+  color: rgb(122, 12, 12);
 }
+
 .logo {
-  color: #ffffff;
+  color: var(--accent-text-color);
 }
 .nav a {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--primary-title-color);
 }
 .nav a:hover {
-  color: #2196f3;
+  color: var(--accent-fon);
 }
 
 .contact a {
@@ -21,23 +29,29 @@ body {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 .contact a:hover {
-  color: #2196f3;
+  color: var(--accent-fon);
 }
 
 .baner > h1 {
-  color: #ffffff;
+  color: var(--accent-text-color);
   text-align: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
 }
+/* button baner*/
+.baner .button {
+  color: var(--accent-text-color);
+  background-color: var(--accent-fon);
+  border-radius: 4px;
+}
 
 /* our advantages */
 .advantages img {
-  background: #f5f4fa;
+  background: var(--primary-fon-button);
   border-radius: 4px;
 }
 .advantages h3 {
@@ -46,11 +60,12 @@ body {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--primary-title-color);
 }
 .advantages p {
   font-size: 14px;
   line-height: 24px;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 /* our_products */
@@ -59,6 +74,7 @@ body {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--primary-title-color);
 }
 
 .our_products h3 {
@@ -68,13 +84,13 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--accent-text-color);
   background-color: rgba(47, 48, 58, 0.8);
   background-size: 370px 70px;
   padding: 2px;
 }
 .our_team {
-  background: #f5f4fa;
+  background: var(--primary-fon-button);
 }
 .our_team h2 {
   font-weight: bold;
@@ -82,7 +98,7 @@ body {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--primary-title-color);
 }
 .our_team h3 {
   font-weight: 500;
@@ -90,20 +106,21 @@ body {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--primary-title-color);
 }
 .our_team p {
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--primary-text-color);
   font-size: 16px;
   line-height: 19px;
 }
 .Soc_Media {
-  background: #ffffff;
+  background: var(--accent-text-color);
 }
 .Soc_Media a:hover,
 a:focus {
-  background-color: #2196f3;
+  background-color: var(--accent-fon);
 }
 .customers h2 {
   font-weight: bold;
@@ -111,6 +128,7 @@ a:focus {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--primary-title-color);
 }
 .customers a {
   border: 1px solid #afb1b8;
@@ -126,9 +144,37 @@ a:focus {
 } */
 .customers a:hover,
 .customers a:focus {
-  background-color: #2196f3;
+  background-color: var(--accent-fon);
 }
 
 .footer {
   background: #2f303a;
+  color: var(--accent-text-color);
+}
+.footer address a {
+  color: rgba(255, 255, 255, 0.6);
+}
+/* button footer */
+.footer .button {
+  color: var(--accent-text-color);
+  background-color: var(--accent-fon);
+  border-radius: 4px;
+}
+
+/* Portfolio */
+.type_projects .button {
+  color: var(--primary-title-color);
+  background-color: var(--primary-fon-button);
+  border-radius: 4px;
+}
+.type_projects .button:hover,
+.type_projects .button:focus {
+  background-color: var(--accent-fon);
+  color: var(--accent-text-color);
+}
+.our_projects .title {
+  color: var(--primary-title-color);
+}
+.our_projects .text {
+  color: var(--primary-text-color);
 }
