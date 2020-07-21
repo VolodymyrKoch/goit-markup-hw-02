@@ -23,6 +23,9 @@ body {
 .nav a:hover {
   color: var(--accent-fon);
 }
+.nav .current {
+  color: var(--accent-fon);
+}
 
 .contact a {
   font-weight: 500;
@@ -41,12 +44,6 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
-}
-/* button baner*/
-.baner .button {
-  color: var(--accent-text-color);
-  background-color: var(--accent-fon);
-  border-radius: 4px;
 }
 
 /* our advantages */
@@ -122,6 +119,12 @@ body {
 a:focus {
   background-color: var(--accent-fon);
 }
+
+/* .Soc_Media img:hover,
+img:focus {
+  background-color: var(--primary-title-color);
+} */
+
 .customers h2 {
   font-weight: bold;
   font-size: 36px;
@@ -161,11 +164,26 @@ a:focus {
   border-radius: 4px;
 }
 
+/* button */
+.button {
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 6px 22px;
+  display: inline-block;
+  /* border: 1px solid black; */
+  border-color: transparent;
+}
+
+/* button baner*/
+.baner .button {
+  color: var(--accent-text-color);
+  background-color: var(--accent-fon);
+}
+
 /* Portfolio */
 .type_projects .button {
   color: var(--primary-title-color);
   background-color: var(--primary-fon-button);
-  border-radius: 4px;
 }
 .type_projects .button:hover,
 .type_projects .button:focus {
