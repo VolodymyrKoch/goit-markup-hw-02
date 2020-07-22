@@ -6,13 +6,33 @@
   --accent-text-color: #ffffff;
 }
 body {
+  font-family: roboto, raleway;
   background-color: aqua;
   color: rgb(122, 12, 12);
 }
 
-.logo {
-  color: var(--accent-text-color);
+.logotype {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: var(--accent-fon);
 }
+
+header .logo {
+  color: var(--primary-title-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav > a {
+  color: var(--primary-title-color);
+}
+
 .nav a {
   font-weight: 500;
   font-size: 14px;
@@ -44,6 +64,7 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
+  text-transform: uppercase;
 }
 
 /* our advantages */
@@ -154,9 +175,23 @@ img:focus {
   background: #2f303a;
   color: var(--accent-text-color);
 }
+
+.footer .logo {
+  color: var(--accent-text-color);
+}
+
 .footer address a {
   color: rgba(255, 255, 255, 0.6);
 }
+.footer .join {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
 /* button footer */
 .footer .button {
   color: var(--accent-text-color);
@@ -181,12 +216,12 @@ img:focus {
 }
 
 /* Portfolio */
-.type_projects .button {
+.filter .button {
   color: var(--primary-title-color);
   background-color: var(--primary-fon-button);
 }
-.type_projects .button:hover,
-.type_projects .button:focus {
+.filter .button:hover,
+.filter .button:focus {
   background-color: var(--accent-fon);
   color: var(--accent-text-color);
 }
@@ -195,4 +230,10 @@ img:focus {
 }
 .our_projects .text {
   color: var(--primary-text-color);
+}
+.our_projects .description {
+  color: var(--accent-text-color);
+}
+.our_projects .description:hover {
+  background-color: rgba(33, 150, 243, 0.9);
 }
