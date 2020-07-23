@@ -6,21 +6,24 @@
   --accent-text-color: #ffffff;
 }
 body {
-  font-family: roboto, raleway;
+  font-family: roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
   background-color: aqua;
   color: rgb(122, 12, 12);
 }
-
+h2,
+h3 {
+  font-weight: bold;
+}
 .logotype {
   font-family: Raleway;
-  font-style: normal;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: 0.03em;
+  font-size: 26px;
+  line-height: 1.19;
   color: var(--accent-fon);
 }
-
 header .logo {
   color: var(--primary-title-color);
 }
@@ -28,15 +31,16 @@ header .logo {
 a {
   text-decoration: none;
 }
+ul {
+  list-style: none;
+}
 
 .nav > a {
   color: var(--primary-title-color);
 }
-
 .nav a {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--primary-title-color);
 }
@@ -50,7 +54,6 @@ a {
 .contact a {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
@@ -63,7 +66,8 @@ a {
   text-align: center;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
@@ -73,85 +77,75 @@ a {
   border-radius: 4px;
 }
 .advantages h3 {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-title-color);
 }
 .advantages p {
-  font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   color: var(--primary-text-color);
 }
 
 /* our_products */
 .our_products h2 {
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--primary-title-color);
 }
 
 .our_products h3 {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
   text-align: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-text-color);
   background-color: rgba(47, 48, 58, 0.8);
-  background-size: 370px 70px;
-  padding: 2px;
+  /* background-size: 370px 70px;
+  padding: 2px; */
 }
+
+/* our_team */
 .our_team {
   background: var(--primary-fon-button);
 }
+.our_team li {
+  background: var(--accent-text-color);
+}
 .our_team h2 {
-  font-weight: bold;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--primary-title-color);
 }
 .our_team h3 {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--primary-title-color);
 }
 .our_team p {
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
 }
-.Soc_Media {
+/* .Soc_Media {
   background: var(--accent-text-color);
-}
+} */
 .Soc_Media a:hover,
 a:focus {
   background-color: var(--accent-fon);
 }
-
 /* .Soc_Media img:hover,
 img:focus {
   background-color: var(--primary-title-color);
 } */
 
+/* customers */
 .customers h2 {
   font-weight: bold;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--primary-title-color);
 }
 .customers a {
@@ -159,8 +153,6 @@ img:focus {
   box-sizing: border-box;
   border-radius: 4px;
 }
-
-/* застосувати hover i focus до всіх посилань */
 /* 
 .customers a:hover, :focus, :active, :visited: {
   color: red;
@@ -175,20 +167,14 @@ img:focus {
   background: #2f303a;
   color: var(--accent-text-color);
 }
-
 .footer .logo {
   color: var(--accent-text-color);
 }
-
 .footer address a {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer .join {
-  font-style: normal;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
@@ -196,7 +182,9 @@ img:focus {
 .footer .button {
   color: var(--accent-text-color);
   background-color: var(--accent-fon);
-  border-radius: 4px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  padding: 10px 29px;
 }
 
 /* button */
@@ -207,18 +195,25 @@ img:focus {
   display: inline-block;
   /* border: 1px solid black; */
   border-color: transparent;
+  font-family: inherit;
+  font-weight: bold;
 }
 
 /* button baner*/
 .baner .button {
   color: var(--accent-text-color);
   background-color: var(--accent-fon);
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  padding: 10px 32px;
 }
 
 /* Portfolio */
 .filter .button {
   color: var(--primary-title-color);
   background-color: var(--primary-fon-button);
+  font-weight: 500;
+  line-height: 1.63;
 }
 .filter .button:hover,
 .filter .button:focus {
@@ -227,12 +222,19 @@ img:focus {
 }
 .our_projects .title {
   color: var(--primary-title-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 .our_projects .text {
   color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.88;
 }
 .our_projects .description {
   color: var(--accent-text-color);
+  font-size: 18px;
+  line-height: 1.56;
 }
 .our_projects .description:hover {
   background-color: rgba(33, 150, 243, 0.9);
