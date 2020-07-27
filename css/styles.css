@@ -4,14 +4,20 @@
   --primary-fon-button: #f5f4fa;
   --accent-fon: #2196f3;
   --accent-text-color: #ffffff;
+
+  --fix: #bd0a6c;
+  --fix-fon: #aaf0f0;
+}
+.fix {
+  color: var(--fix);
+  background-color: var(--fix-fon);
 }
 body {
   font-family: roboto, sans-serif;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  background-color: aqua;
-  color: rgb(122, 12, 12);
+  background-color: var(--fix-fon);
 }
 h2,
 h3 {
